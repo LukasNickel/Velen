@@ -24,15 +24,16 @@ modules:
       - krdc
       - krfb
       - syncthing
-      - rust-bat
+      - rust-bat # Ich glaube die braucht es gar nicht aurora cli hat so einen bling mode mit bat und co aus brew hmm...
       - rust-eza
       - easyeffects
       - kitty
   - type: default-flatpaks
-    install:
-      - steam
-      - chromium
-      - telegram
-      - gimp
+    system:
+      install:
+        - steam
+        - chromium
+        - telegram
+        - gimp
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
