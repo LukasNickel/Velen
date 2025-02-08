@@ -24,8 +24,6 @@ modules:
       - krdc
       - krfb
       - syncthing
-      - rust-bat # Ich glaube die braucht es gar nicht aurora cli hat so einen bling mode mit bat und co aus brew hmm...
-      - rust-eza
       - easyeffects
       - kitty
   - type: default-flatpaks
