@@ -21,6 +21,18 @@ modules:
       - emacs
       - neovim
       - keepassxc
-
+      - krdc
+      - krfb
+      - syncthing
+      - rust-bat
+      - rust-eza
+      - easyeffects
+      - kitty
+  - type: default-flatpaks
+    install:
+      - steam
+      - chromium
+      - telegram
+      - gimp
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
