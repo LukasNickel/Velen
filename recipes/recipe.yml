@@ -38,10 +38,13 @@ modules:
     user:
       enabled:
         - syncthing.service # does this also start the service now?
-  - type: script
-    snippets:
-      - "git clone --depth 1 https://github.com/dexpota/kitty-themes.git ~/.config/kitty/kitty-themes"
-    
+        # TODO: While this works, it of course installs things in the root home...
+        #- type: script
+        #snippets:
+        #- "git clone --depth 1 https://github.com/dexpota/kitty-themes.git ~/.config/kitty/kitty-themes"
+  - type: chezmoi
+    repository: "https://github.com/LukasNickel/cfg"
+    file-conflict-policy: replace # override changed files with those from the repo
 
 # TODO: Enable bling, install bash-preexec (missing in bling, needed for atuin), pull configs, enable syncthing?
 # welchen sinn hat topgrade, wenn das immer darain scheitert dnf updates zu machen (muss ja auch...) kann man das in ner config filtern?
