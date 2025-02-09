@@ -38,10 +38,10 @@ modules:
     user:
       enabled:
         - syncthing.service # does this also start the service now?
-        # TODO: While this works, it of course installs things in the root home...
-        #- type: script
-        #snippets:
-        #- "git clone --depth 1 https://github.com/dexpota/kitty-themes.git ~/.config/kitty/kitty-themes"
+  # TODO: Whats the best place for these?
+  - type: script
+    snippets:
+        - "git clone --depth 1 https://github.com/dexpota/kitty-themes.git /usr/share/kitty-themes"
   - type: chezmoi
     repository: "https://github.com/LukasNickel/cfg"
     file-conflict-policy: replace # override changed files with those from the repo
