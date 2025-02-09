@@ -29,9 +29,9 @@ modules:
   - type: default-flatpaks
     system:
       install:
-        - Steam
-        - chromium
-        - telegram
-        - gimp
+        - com.valvesoftware.Steam
+        - org.chromium.Chromium
+        - org.telegram.desktop
+        - org.gimp.GIMP
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
