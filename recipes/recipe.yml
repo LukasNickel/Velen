@@ -29,7 +29,7 @@ modules:
   - type: default-flatpaks
     system:
       install:
-        - steam
+        - Steam
         - chromium
         - telegram
         - gimp
