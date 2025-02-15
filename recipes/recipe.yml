@@ -43,7 +43,7 @@ modules:
     snippets:
         - "git clone --depth 1 https://github.com/dexpota/kitty-themes.git /usr/share/kitty-themes"
   - type: chezmoi
-    repository: "https://github.com/LukasNickel/cfg"
+    repository: "https://github.com/LukasNickel/dotfiles"
     file-conflict-policy: replace # override changed files with those from the repo
 
 # TODO: Enable bling, install bash-preexec (missing in bling, needed for atuin), pull configs, enable syncthing?
