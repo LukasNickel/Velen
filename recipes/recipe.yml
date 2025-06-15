@@ -38,7 +38,6 @@ modules:
     user:
       enabled:
         - syncthing.service # does this also start the service now?
-  # TODO: Whats the best place for these?
   - type: script
     snippets:
         - "git clone --depth 1 https://github.com/dexpota/kitty-themes.git /usr/share/kitty-themes"
