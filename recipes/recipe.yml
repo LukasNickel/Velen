@@ -26,7 +26,7 @@ modules:
       - syncthing
       - easyeffects
       - kitty
-  - type: default-flatpaks
+  - type: default-flatpaks@v1
     system:
       install:
         - com.valvesoftware.Steam
