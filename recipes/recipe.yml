@@ -26,6 +26,7 @@ modules:
       - syncthing
       - easyeffects
       - kitty
+      - git-delta
   - type: default-flatpaks
     configurations:
       - notify: false
