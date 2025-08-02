@@ -26,13 +26,14 @@ modules:
       - syncthing
       - easyeffects
       - kitty
-  - type: default-flatpaks@v1
-    system:
-      install:
-        - com.valvesoftware.Steam
-        - org.chromium.Chromium
-        - org.telegram.desktop
-        - org.gimp.GIMP
+  - type: default-flatpaks
+    configurations:
+      - notify: false
+        install:
+          - com.valvesoftware.Steam
+          - org.chromium.Chromium
+          - org.telegram.desktop
+          - org.gimp.GIMP
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
   - type: systemd
     user:
