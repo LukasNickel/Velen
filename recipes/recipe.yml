@@ -21,8 +21,6 @@ modules:
       - emacs
       - neovim
       - keepassxc
-      - krdc
-      - krfb
       - syncthing
       - easyeffects
       - kitty
